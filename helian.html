@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <title>Página HELIAN ADV</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link href="stylesheet" href="helian.css">
+
+
+<!-- MEUS ELEMENTOS CSS-->
+<style>
+.Menu{
+  position: fixed;
+  top: 0;
+  width: 100%;
+ 
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  z-index: 100;   /* Valor de z-index para sobrepor outros itens */
+  
+}
+.Menu ul{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+.Menu li{
+  display: inline;
+  margin-right: 20px;
+
+}
+.Menu li:last-child{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.link{
+  text-decoration: none;
+  color: #c9a476;
+
+}
+.Menu li a:hover{       /* Quando passar o mouse por cima dos links da nav */
+  color: #814f16;
+}
+.background-image {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 144px;
+  background-image: url(Imagens/wall.jpg);
+  background-position:center top;
+  background-size:  100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  filter:brightness(0.5)
+
+ } /*Opacidade da imagem de fundo, ajuste conforme necessário
+
+
+.header {
+  background-image: url(Imagens/teste.jpg);
+  background-size: cover; 
+  background-position:bottom center;
+  background-color: #000000;  
+
+}
+/* ---------- Botão do Whatsapp ---------------*/
+.fixed-div{
+  position: fixed;
+  top: 90%;
+  right: 10px;
+  width: 61px;
+  z-index: 99;
+}
+/*Estilizando o tooltip (efeito do mouse)*/
+.elemento:hover::after {
+  content: attr(title);
+  background-color: #295830;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 99;
+}
+
+/*----------------Aqui começa a segunda parte -----------------*/
+.secao {
+  position: relative;
+  height: 650px;
+  color: #d4ab79;
+  text-align: center;
+  
+}
+
+.secao::before {
+  content: "";
+  background-image: url(Imagens/wall.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5; /* Valor de opacidade */
+  z-index: -1;
+}
+
+.secao h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+body {
+  /*Pra imagem de fundo ficar com destaque melhor*/
+  background-color: black;}
+
+.secao p {
+  font-size: 54px;
+  font-family:sans-serif;
+  font-weight: 600;
+}
+.entrarcontato{
+  background-image: linear-gradient(to top, #2a09a1, #000000);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;  
+  font-weight: 600;
+  font-family: sans-serif;
+  cursor: pointer;
+/* ---------------AQUI COMEÇA A TERCEIRA PARTE----------------------------*/
+}
+.coluna {
+  width: 20%;
+  float: left;    
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  margin-top: 50px;
+  background-color: #000000;
+  border: 3px solid #d4ab79;
+  color: #d4ab79;
+  padding: 4px;
+  text-align: center;
+  font-weight: 600;
+  border-style:solid;
+  border-radius: 50px;
+  font-size: 12px;
+}      
+.meio{
+  font-family: sans-serif;
+  
+}
+.ideia{
+  width: 50px;
+  opacity: 0.5  ;
+}
+.negocio{
+  width: 50px;
+  opacity: 0.5;
+}
+.balança{
+width: 50px;
+opacity: 0.99;
+}
+
+
+
+/*AQUI COMÇA A QUARTA PARTE*/
+
+
+
+.separada {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Defina a altura desejada para a section */
+}
+
+.imagem-fundo {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-image: url(Imagens/161084-city-night-lights.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3);
+  margin-top: 250px;
+  opacity: .7;
+}
+
+.conteudo {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-70%, -50%);
+color: #ffffff; /* Cor da fonte */
+}
+.display {
+font-weight: 600;
+font-family: sans-serif;
+text-align: center;
+color: #d4ab79;}
+.are{
+text-align: justify;
+box-sizing: border-box;
+border-style: none;
+color: #d4ab79;
+}
+
+
+/*AQUI COMEÇA A QUINTA PARTE*/
+
+
+.Escritório {
+  position: relative;
+  height: 650px;
+  color: #d4ab79;
+  text-align: center;
+  
+}
+
+.Escritório::before {
+  content: "";
+  background-image: url(Imagens/cidade-noite.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  margin-top: -20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5; /* Valor de opacidade */
+  z-index: -1;
+}
+.pq{
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.Missão{
+  width: 200%;
+  float: left;    
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 40px;
+  color: #d4ab79;
+  text-align: center;
+  font-weight: 600;
+  border-style:solid;
+  border-radius: 50px;
+  font-size: 19px;
+}
+.alvo{
+  width: 50px;
+  opacity: .9;
+}
+footer {
+  background-color: #000000;
+  color: #58360c;
+  padding: 5px;
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+/*AQUI COMAÇA A SEXTA PARTE*/
+.C1{
+  margin-left: 75px;
+}
+.form-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      max-width: 400px;
+      margin-left: 75px;
+      color: #ffffff;
+    }
+
+    .form-box label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-box input, .form-box textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    .form-box button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-box button:hover {
+      background-color: #45a049;
+    }
+
+
+/*AQUI COMAÇA A SÉTIMA PARTE*/
+
+
+.section-com-listas {
+  position: relative;
+}
+
+.listas-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ffffff; /* Cor do texto nas listas */
+  position: relative; /* Adicionado */
+  z-index: 1; /* Adicionado */
+}
+
+.listas-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Imagens/508827.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* Ajuste a opacidade conforme necessário */
+  filter: brightness(.5);
+  z-index: -1; /* Coloca o pseudoelemento atrás das listas */
+}
+
+.lista1, .lista2, .lista3 {
+  align-self: center; /* Alinha verticalmente no centro */
+}
+
+.lista1 ul, .lista2 ul, .lista3 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lista1 li, .lista2 li {
+  margin-bottom: 10px;
+}
+.faleinstenc{
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.Encontrar{
+text-decoration: none;
+color: #ffffff;
+}
+
+
+
+</style>
+
+
+  
+
+</head>
+
+<body>
+ 
+ 
+ 
+  <header class="header">
+<!-- place navbar here -->
+<section class="Menu">
+  <div class="background-image">
+    <ul>
+      <li><a href="helian.html"><img src="Imagens/4.png" alt="helian adv" title="Helian" width="120px" class="canto-superior-esquerdo" ></a></li>
+      <li><a href="#"><img src="Imagens/CAMADA RVA.jpg.png" alt="RVA adv" title="RVA" width="80px" class="" ></a></li>
+            
+            <li><a href="#" class="link" >O ESCRITÓRIO </a></li>
+            <li><a href="contato.php" class="link" >CONTATO</a></li>
+            <li><a href="#" class="link" >AREAS DE ATUAÇÃO </a></li>
+            <li><img src="Imagens/nome-helian-.png" alt="Nome" width="250px" class="canto-superior-direito"></li>
+          </ul>
+          
+  </div>
+  
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</header>
+ 
+ 
+ 
+ 
+ 
+ 
+<main>
+<div class="secao">
+  <h1>Advocacia Especializada</h1>
+  <p>QUALIDADE, ÉTICA E ATENDIMENTO PERSONALIZADO </p>
+  <button class="entrarcontato">ENTRAR EM CONTATO</button>
+</div>
+
+<section class="meio">
+  <div class="coluna">
+  
+    <img src="Imagens/engrenagem.png" alt="" class="ideia" >
+    <h3>Focado em Soluções Estratégicas</h3>
+    <p></p>
+  </div>
+  <div class="coluna">
+    <img src="Imagens/balancas-1.png" alt="" class="balança">
+    <h3 class="">Associado em um Escritório Renomado.</h3>
+    <p></p>
+  </div>
+  <div class="coluna">
+    <img src="Imagens/negocio.png" alt="" class="negocio">
+    <h2 style="font-size: 28px;",>Atendimento Personalizado</h2>
+    <p></p>
+  </div>
+  <div class="coluna">
+    <img src="Imagens/navegador-da-web.png" alt="" class="negocio">
+    <h3>Atendimento Personalizado</h3>
+    <p>Conteúdo da coluna 1</p>
+  </div>
+
+</section>
+
+
+
+
+<section class="separada">
+  <div class="imagem-fundo"></div>
+  <div class="conteudo">
+    <h1 class="display">QUEM SOU EU</h1>
+    <div class="are">
+      <p>O Advogado Helian (TEXTO BONITO)nasceu da idealização de seu sócio fundador frente a uma necessidade latente em aliar personalização no atendimento ao cliente e solução dos casos. Sempre pautado na lei, ética e compromisso.</p>
+      <p>Nosso principal objetivo é apresentar soluções eficientes aos clientes, sempre com responsabilidade, respeito, agilidade e inovação na entrega dos serviços prestados.</p>
+      <p>​Conte com o profissionalismo e experiência do nosso escritório.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="Escritório">
+  <div>
+    <br></br>
+    <h1 class="pq"> PORQUE ESCOLHER O HELIAN COMO ADVOGADO?</h1>
+  </div>
+  <div class="Missão">
+    <img src="Imagens/mission-icon-19.png" alt="" class="alvo">
+    <p>Oferecer soluções jurídicas com o irrestrito comprometimento em busca de resultados, tendo como premissas o atendimento personalizado, agilidade e inovação na entrega.</p>
+  </div>
+  <div class="Missão">
+    <img src="Imagens/mission-icon-19.png" alt="" class="alvo">
+    <p>Oferecer soluções jurídicas com o irrestrito comprometimento em busca de resultados, tendo como premissas o atendimento personalizado, agilidade e inovação na entrega.</p>
+  </div>
+  <div class="Missão">
+    <img src="Imagens/mission-icon-19.png" alt="" class="alvo">
+    <p>Oferecer soluções jurídicas com o irrestrito comprometimento em busca de resultados, tendo como premissas o atendimento personalizado, agilidade e inovação na entrega.</p>
+  </div>
+  <div class="Missão">
+    <img src="Imagens/mission-icon-19.png" alt="" class="alvo">
+    <p>Oferecer soluções jurídicas com o irrestrito comprometimento em busca de resultados, tendo como premissas o atendimento personalizado, agilidade e inovação na entrega.</p>
+  </div>
+  <div class="Missão">
+    <img src="Imagens/mission-icon-19.png" alt="" class="alvo">
+    <p>Oferecer soluções jurídicas com o irrestrito comprometimento em busca de resultados, tendo como premissas o atendimento personalizado, agilidade e inovação na entrega.</p>
+  </div>
+
+</section>
+
+<!-- ========== Preciso colocar agora um formulario pra entrar em contato e ao lado um mapa com ccódigo pronto no teste.html ========== -->
+<section>
+  <h1 class="C1" >Entre em Contato</h1>
+
+  <div class="form-box">
+    <form action="/enviar-contato" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+
+
+
+
+</section>
+
+
+
+
+
+<section class="section-com-listas">
+  <div class="background-image"></div>
+  <div class="listas-container">
+    <div class="lista1">
+      <h2 class="faleinstenc">Fale Conosco</h2>
+      <ul>
+        <li>Email: advogadohelian@gmail.com</li>
+        <li>Telefone: (32) 9 9937-8523 </li>
+        <li>Endereço: Rua Dr. Horta, nº16, sala 1 - Centro - Viçosa, Minas Gerais</li>
+      
+      </ul>
+    </div>
+    <div class="lista2">
+      <ul>
+        <h2 class="faleinstenc">Institucional</h2>
+        <li>Inicio <img src="" alt=""></li>
+        <li>RVA</li>
+        <li>Escritório</li>
+        <li>Contato</li>
+        <li>Areas de Atuação</li>
+
+      </ul>
+    </div>
+    <div class="lista3">
+      <ul>
+        <h2 class="faleinstenc" >Onde nos encontrar?</h2>
+        <a class="Encontrar" href=""> <li> Facebook</li></a>
+        <a class="Encontrar" href="https://instagram.com/helianjulio29?igshid=MzRlODBiNWFlZA==" target="_blank"> <li> Instagram</li></a>
+        <a class="Encontrar" href="https://wa.me/5532999378523" target="_blank"> <li> WhatsApp</li></a>
+        
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+  <footer>
+    <!-- place footer here -->
+    <p>&copy; 2023 Helian OAB/MG sob o Nº 223.051. Todos os direitos reservados. Desenvolvido por Vinicius</p>
+    <div class="fixed-div">
+      <a class="elemento" href="https://wa.me/5532999378523" title="WhatsApp"><img src="Imagens/buttom what.png" alt="WHATS" width="50px" ></a>
+    </div>  
+  </footer>
+ 
+</body>
+
+</html>
